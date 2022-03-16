@@ -6,7 +6,7 @@
 
 视觉方面采用基于Darknet框架的YoloV4模型进行实时推理来检测锥桶获取位置，并融合传统图像处理,进行视觉导航，同时，用扩展卡尔曼滤波融合传感器计算odom结合gmapping进行同步建图。
 
-![img](file:///C:/Users/Administrator/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
+![img](https://github.com/GeXu66/DIP-cone/blob/main/png/final.gif)
 
 Figure 1 YoloV4在COCO数据集的性能表现
 
@@ -14,9 +14,6 @@ Figure 1 YoloV4在COCO数据集的性能表现
 
 第二圈采用Triangular Delaunay三角剖分路径规划，基于已经建好的图进行导航。首先根据建好的图识别出锥桶的位置，然后基于Triangular Delaunay算法连接锥桶取终点计算局部路径，进而生成全局路径。
 
-![img](file:///C:/Users/Administrator/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
-
-​																		Figure 2 基于Triangular Delaunay的路径规划
 
 生成路径后需要优化全局路径并进行轨迹跟踪。
 
