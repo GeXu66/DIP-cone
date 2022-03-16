@@ -1,4 +1,5 @@
 # Use deep learning object detection to cross a track surrounded by red and blue cone barrels
+![img](https://github.com/GeXu66/DIP-cone/blob/main/png/final.gif)
 
 ## 1.1第一圈技术实现路线
 
@@ -6,9 +7,6 @@
 
 视觉方面采用基于Darknet框架的YoloV4模型进行实时推理来检测锥桶获取位置，并融合传统图像处理,进行视觉导航，同时，用扩展卡尔曼滤波融合传感器计算odom结合gmapping进行同步建图。
 
-![img](https://github.com/GeXu66/DIP-cone/blob/main/png/final.gif)
-
-Figure 1 YoloV4在COCO数据集的性能表现
 
 ## 1.2第二圈技术实现路线
 
